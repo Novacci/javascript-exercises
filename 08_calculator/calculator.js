@@ -23,9 +23,21 @@ const multiply = function (a) {
   }
   return result;
 };
-const power = function () {};
+const power = function (a, b) {
+  let sum = Math.pow(a, b);
+  return sum;
+};
 
-const factorial = function () {};
+const factorial = function (num) {
+  if (num === 0 || num === 1) {
+    return 1;
+  } else {
+    for (let i = num - 1; i > 1; i--) {
+      num = num * i;
+    }
+    return num;
+  }
+};
 
 // Do not edit below this line
 module.exports = {
